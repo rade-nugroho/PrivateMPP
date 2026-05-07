@@ -26,11 +26,26 @@ pnpm agent:dev
 | `packages/mpp-bridge` | `mppx/server` helpers (`createTempoDemoMppx`, paid handler sketch), PER settle stub |
 | `packages/agent` | OpenRouter + PER tools + `pay_resource` (see `packages/agent/src`) |
 | `docs/` | PRD + architecture (high/low level) |
+| `security/` | Threat model, SARIF and scan outputs, supply-chain notes |
 
 ## Architecture
 
 - **High level**: `docs/architecture-high-level.md` — context, containers, 402 flow.
 - **Low level**: `docs/architecture-low-level.md` — modules, env vars, PER method map, security checklist.
+
+## Security artifacts
+
+Threat models, automated scan outputs (SARIF), Superstack-style summaries, CodeQL handoffs, and supply-chain notes live under **`security/`**:
+
+| Path | Description |
+|------|-------------|
+| `security/PrivateMPP-threat-model.md` | Trust boundaries and threat questions |
+| `security/security_best_practices_report.md` | Practices-oriented security assessment |
+| `security/reports/` | SARIF (`results-*.sarif`), rolling reports (`PrivateMPP-*.md`, `history.md`) |
+| `security/static_analysis_codeql_1/` | Static analysis / CodeQL handoff (`parent_handoff.txt`, `raw/`) |
+| `security/supply-chain-risk-auditor/results.md` | Dependency supply-chain scan |
+
+Legacy paths **`.superstack/security-reports`** (symlink → `security/reports`) and **`.supply-chain-risk-auditor`** (symlink → `security/supply-chain-risk-auditor`) remain for tooling compatibility.
 
 ## Key references
 

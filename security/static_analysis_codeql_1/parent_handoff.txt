@@ -1,0 +1,9 @@
+codeql_installed: false
+codeql_version: NOT INSTALLED (command not found)
+reason: Stop per instructions — do not download CodeQL
+OUTPUT_DIR: /Users/macbook/PrivateMPP/security/static_analysis_codeql_1
+existing_dbs: none found (find . -maxdepth 3 -name codeql-database.yml)
+db_path: N/A
+sarif_path: N/A
+finding_count: N/A
+blockers: CodeQL CLI not on PATH; install CodeQL bundle and add to PATH to proceed
