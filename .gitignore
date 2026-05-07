@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+*.tsbuildinfo
+
+# Environment
+.env
+.env.*.local
+
+# Logs & caches
+*.log
+.pnpm-store/
+.turbo/
+.cache/
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/

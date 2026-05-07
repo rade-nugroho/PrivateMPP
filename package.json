@@ -1,0 +1,14 @@
+{
+  "name": "private-mpp",
+  "private": true,
+  "packageManager": "pnpm@9.14.4",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "clean": "pnpm -r run clean --if-present",
+    "agent:dev": "pnpm --filter @private-mpp/agent dev",
+    "web:dev": "pnpm --filter @private-mpp/web dev"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
