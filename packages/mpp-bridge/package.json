@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@private-mpp/per-client": "workspace:*",
-    "mppx": "^0.6.16",
+    "mppx": "^0.8.2",
     "viem": "^2.47.5"
   },
   "devDependencies": {
